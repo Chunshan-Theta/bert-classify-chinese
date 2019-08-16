@@ -1,0 +1,11 @@
+.idea
+
+*.local
+checkpoint
+*.tf_record
+*.pbtxt
+*.pkl
+*.data-00000-of-00001
+*.index
+*.meta
+*.DS_Store
