@@ -34,7 +34,7 @@
     1	300元能買多少？
     ```
 
-#### 訓練模型
+#### 訓練模型 `./model_train`
 1. 修改參數檔案
 
         ./model_train/run.sh:
@@ -55,8 +55,20 @@
    重新訓練的話，記得要先清空舊檔案（output資料夾）
 4. 輸出檔案
 
-   - eval_results.txt 評估成功率結果
-   - test_samples_results.csv 推論範例結果比對
+    * ./output/eval_results.txt
+
+    ```buildoutcfg
+    # 範例格式.
+    eval_accuracy = 0.8792814
+    eval_f1 = 0.8148148
+    ```
+  
+    * ./output/test_samples_results.csv
+    
+    ```buildoutcfg
+    # 範例格式
+    o,答案: 1,詢價,這個茶壺多少錢？,預測: 1,詢價,"0.29443625 0.31483293 0.24977936 0.14095142
+    ```
 
 
 # Model
